@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Code below
+
+awk -F' ' '{ print $1, $9 }' apache-access.log | sort | uniq -c | sort -rn
